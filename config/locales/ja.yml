@@ -1,0 +1,28 @@
+ja:
+  models:
+    user: ユーザー 
+    food: 食メモ
+  attributes:
+    user:
+      id: ID
+      email: メールアドレス
+      password: パスワード
+  attributes:
+    food:
+      id: ID
+      image_url: 画像
+      name: 料理名
+      meal_time:
+        mornig: Mornig
+        lunch: Lunch
+        dinner: Dinner
+      purchase_date: 食事日
+  message:
+    delete: Deleted the food
+    invalid_delete: Invalid Deleted the food
+    logout: ログアウトしました
+    invalid_authorization: メールアドレスまたはパスワードが違います
+    authorization: 認証情報が不足しています
+    invalid_sign_up: サインアップできません
+    jwt: JSON Web Token
+    invalid_imgur: Imagurへのアップロードに失敗しました
