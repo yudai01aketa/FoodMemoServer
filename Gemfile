@@ -11,7 +11,7 @@ gem 'httpclient'
 gem 'jwt'
 gem 'mysql2', '>= 0.4.4'
 gem 'puma', '~> 4.1'
-gem 'rails', '~> 6.0.4'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'rails-i18n'
 
 group :development, :test do
