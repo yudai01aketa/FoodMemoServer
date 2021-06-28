@@ -1,0 +1,51 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+
+Rails:
+  Enabled: true #Rails 用に最適化されたモードにする設定
+
+AllCops:
+  Exclude:
+    - 'bin/**'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'vendor/**/**/*'
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Layout/FirstHashElementLineBreak:
+  Enabled: false
+
+Airbnb/OptArgParameters:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Airbnb/DefaultScope:
+  Enabled: false
+
+Airbnb/RiskyActiverecordInvocation:
+  Enabled: false
+
+Layout/Tab:
+  Enabled: false
+
+AlignHash:
+  EnforcedColonStyle: table
