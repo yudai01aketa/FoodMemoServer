@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   include JwtAuthenticator
   rescue_from RuntimeError, with: :authorization_error
+  # rescue_from Exception, with: :imgur_error
 
   def render_json_foods(food)
     render json: food, status: 200
@@ -28,5 +29,9 @@ class ApplicationController < ActionController::API
 
   def render_json_jwt_error
     render json: { message: I18n.t("message.invalid_authorization") }, status: 401
+  end
+
+  def imgur_error
+    render json: { message: I18n.t("message.invalid_imgur") }, status: 500
   end
 end
