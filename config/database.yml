@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: food_memo_production
-  username: food_memo
-  password: <%= ENV['FOOD_MEMO_DATABASE_PASSWORD'] %>
+  database: application_name_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
