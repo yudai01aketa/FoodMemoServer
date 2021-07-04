@@ -2,6 +2,9 @@
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
 lock '3.16.0'
 
+# master.key読み込み
+set :linked_files, fetch(:linked_files, []).push("config/master.key")
+
 # Capistranoのログの表示に利用する
 set :application, 'FoodMemoServer'
 set :deploy_to, '/var/www/FoodMemoServer'
