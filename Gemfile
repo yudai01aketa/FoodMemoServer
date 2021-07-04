@@ -13,7 +13,6 @@ gem 'mysql2', '>= 0.4.4'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'rails-i18n'
-gem 'capistrano'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -22,6 +21,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop-airbnb'
   gem 'shoulda-matchers'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
